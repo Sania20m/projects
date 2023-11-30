@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurant Orders</h1>
+    <div class="inputs">
+      <label for="price">Choose Price:</label>
+      <input type="text" id="price">
+      <label for="dish">Choose Dish:</label>
+      <input type="text" id="dish">
+      <label for="table">Choose Table (1-3):</label>
+      <input type="number" id="table" min="1" max="3">
+      <button onclick="addToBill()">Add to Bill</button>
+    </div>
+    <h2>Orders</h2>
+    <div class="orders">
+      <h3>Table 1</h3>
+      <ul id="table1Orders"></ul>
+      <!-- <button onclick="deleteOrders(1)"></button> -->
+      <h3>Table 2</h3>
+      <ul id="table2Orders"></ul>
+      <!-- <button onclick="deleteOrders(2)"></button> -->
+      <h3>Table 3</h3>
+      <ul id="table3Orders"></ul>
+      <!-- <button onclick="deleteOrders(3)"></button> -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
